@@ -1,0 +1,20 @@
+{
+
+	"manifest_version": 2,
+	"name": "TwitterDraft Saver",
+	"version": "1.4",
+
+	"description": "Saving your Tweet if you close the page but didn't send it..",
+
+	"icons": {
+		"48": "icons/draft-96.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.twitter.com/*"],
+			"js": ["twitterdraft.js"]
+		}
+	]
+
+}
